@@ -1,0 +1,46 @@
+/* we have to change the plain css into sass  */
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 29% 64%;
+  /* gap: 1rem 4rem; */
+}
+.logo {
+  display: flex;
+  align-items: start;
+  margin-left:2rem;
+}
+
+.logo-text{
+  margin:.3rem 0;
+}
+.footer-links div h3{
+  margin-top:0;
+}
+.footer-section .footer-links {
+  display: flex;
+  gap: 5rem;
+}
+
+.footer-links div li {
+  color: var(--primary-color);
+  margin: 0.7rem 0;
+  cursor:pointer;
+}
+ 
+@media only screen and (max-width: 1130px) {
+ .footer-section{
+  grid-template-columns: 20% 80%;
+ }
+ .footer-section .footer-links {
+  gap: 4.5rem;
+ }
+}
+@media only screen and (max-width: 730px){
+  .footer-section {
+    display: block;
+  }
+  .footer-section .footer-links{
+    min-width:45%;
+  }
+}
